@@ -1,0 +1,13 @@
+version: '3.9'
+services: 
+    myapp:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                RBASE_VERSION: $RBASE_VERSION
+        image: myapp:1.0.0
+        hostname: myapp
+        ports: 
+            - 3838:${SHINY_LISTENING_PORT}
+    

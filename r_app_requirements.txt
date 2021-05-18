@@ -1,0 +1,10 @@
+shiny
+shinydashboard
+shinyFiles
+shinythemes
+stringr
+rJava
+readxl
+reshape2
+DT
+httr
