@@ -1,3 +1,16 @@
-*.txt -crlf
+# Handle line ending automatically for files detected as text and 
+# leave all files detected as binary untouched
+* text=auto 
 
-*.txt text eol=lf 
+# Never modify line endings for these files:
+linux_requirements.txt -lf 
+app/requirements.txt -lf
+*.R -lf
+*.sh -lf
+*.conf -lf
+
+# Files that should be normalized from CRLF to LF
+*.md   text
+
+# Leave the following files untouched:
+# *.class  binary

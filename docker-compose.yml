@@ -5,7 +5,9 @@ services:
             context: .
             dockerfile: Dockerfile
             args:
-                RBASE_VERSION: $RBASE_VERSION
+                RBASE_VERSION: ${RBASE_VERSION}
+                SHINY_PACKAGE: ${SHINY_PACKAGE}
+                SHINY_LOG_LEVEL: ${SHINY_LOG_LEVEL}
         image: myapp:1.0.0
         hostname: myapp
         ports: 
