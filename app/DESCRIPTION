@@ -1,0 +1,13 @@
+Package: sample_app
+Version: 0.1
+Date: 2021-06-02
+Title: Sample Shiny Application
+Description: Sample Shiny Application template
+Authors@R: c(person("Hirley Dayan", "Developer", role = c("aut", "cre"),
+                     email = "hirleydayan@gmail.com"))
+Encoding: UTF-8
+Depends: 
+  R (>= 4.1.0)
+License: MIT
+Imports: 
+  shiny
